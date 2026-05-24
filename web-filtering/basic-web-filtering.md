@@ -26,8 +26,26 @@ Applied the web policy to the LAN to WAN firewall rule.
 
 ### Step 3 - Test
 Tested from client PC:
+- Facebook → Working
+- YouTube → Working
+
+### Problem
+HTTPS websites were still accessible even after applying the web filtering policy.
+
+### Root Cause
+Encrypted HTTPS traffic could not be inspected by the firewall.
+
+### Fix
+Enabled HTTPS Decryption and Inspection on the firewall.
+
+### Test
+Tested from client PC:
 - Facebook → Blocked
 - YouTube → Blocked
+
+### Result
+Blocked HTTPS websites were filtered successfully.
+
 
 ## Troubleshooting
 
