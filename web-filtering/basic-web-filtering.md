@@ -78,14 +78,3 @@ HTTPS inspection improves visibility and control over encrypted traffic but may 
 - Privacy considerations
 - Certificate trust issues on client devices
 
-
-## Screenshots
-
-### Web Policy Configuration
-![Web Policy](screenshots/web-policy-configuration.png)
-
-### HTTPS Inspection Settings
-![HTTPS Inspection](screenshots/https-inspection-settings.png)
-
-### Blocked Website Test
-![Blocked Website](screenshots/blocked-website-test.png)
