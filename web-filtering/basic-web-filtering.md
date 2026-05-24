@@ -13,8 +13,8 @@ Block social media websites for LAN users.
 ### Step 1 - Create Web Policy
 Navigate to:
 
-```Protect>
-Web > Policies
+```text
+Protect>Web > Policies
 ```
 
 Created a policy to block:
@@ -24,7 +24,7 @@ Created a policy to block:
 ### Step 2 - Apply Policy
 Applied the web policy to the LAN to WAN firewall rule.
 
-### Step 3 - Test
+### Initial Test
 Tested from client PC:
 - Facebook → Working
 - YouTube → Working
@@ -38,14 +38,13 @@ Encrypted HTTPS traffic could not be inspected by the firewall.
 ### Fix
 Enabled HTTPS Decryption and Inspection on the firewall.
 
-### Test
+### Final Test
 Tested from client PC:
 - Facebook → Blocked
 - YouTube → Blocked
 
 ### Result
-Blocked HTTPS websites were filtered successfully.
-
+HTTPS traffic was successfully inspected and blocked according to the web filtering policy.
 
 ## Troubleshooting
 
@@ -71,3 +70,10 @@ In production environments:
 - Apply HTTPS inspection only where required
 - Exclude trusted or sensitive websites when necessary
 - Monitor firewall performance and CPU usage
+
+## Security Consideration
+
+HTTPS inspection improves visibility and control over encrypted traffic but may introduce:
+- Increased firewall resource utilization
+- Privacy considerations
+- Certificate trust issues on client devices
