@@ -62,3 +62,12 @@ Attached web policy correctly.
 - Web filtering works through firewall rules
 - HTTPS inspection may be required
 - Policy order is important
+
+## Important Note
+
+HTTPS Decryption increases CPU and memory usage because the firewall must decrypt and inspect encrypted traffic.
+
+In production environments:
+- Apply HTTPS inspection only where required
+- Exclude trusted or sensitive websites when necessary
+- Monitor firewall performance and CPU usage
