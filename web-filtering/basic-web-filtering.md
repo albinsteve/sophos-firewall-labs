@@ -26,8 +26,8 @@ Applied the web policy to the LAN to WAN firewall rule.
 
 ### Initial Test
 Tested from client PC:
-- Facebook → Working
-- YouTube → Working
+- Facebook → Accessible
+- YouTube → Accessible
 
 ### Problem
 HTTPS websites were still accessible even after applying the web filtering policy.
