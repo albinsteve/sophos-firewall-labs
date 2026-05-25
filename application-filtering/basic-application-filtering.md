@@ -65,6 +65,15 @@ This demonstrated that application filtering works independently of traditional 
 
 Application filtering identifies traffic using application signatures instead of only URLs or ports.
 
+## Web Filtering vs Application Filtering
+
+| Web Filtering | Application Filtering |
+|---|---|
+| Controls websites | Controls applications |
+| Uses URL/category database | Uses DPI signatures |
+| Example: facebook.com | Example: Facebook App |
+| Domain-based | Traffic behavior-based |
+
 This allows the firewall to detect and block applications such as BitTorrent even when:
 - Non-standard ports are used
 - Encrypted traffic is used
