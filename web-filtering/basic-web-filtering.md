@@ -78,3 +78,24 @@ HTTPS inspection improves visibility and control over encrypted traffic but may 
 - Privacy considerations
 - Certificate trust issues on client devices
 
+## Additional Observation
+
+Web filtering continued to block social networking and video hosting websites even after HTTPS decryption was disabled.
+
+### Analysis
+
+Sophos was still able to identify websites using:
+- DNS information
+- TLS SNI (Server Name Indication)
+- URL/category databases
+
+### Limitation
+
+Without HTTPS decryption, the firewall cannot fully inspect:
+- Encrypted page content
+- Exact URLs
+- Application activity inside HTTPS sessions
+
+### Key Learning
+
+Modern next-generation firewalls can perform basic HTTPS category filtering without full SSL/TLS decryption.
